@@ -1,0 +1,17 @@
+{
+  "name": "scf-chatbot-server",
+  "version": "1.0.0",
+  "description": "Backend server cho SCF Chatbot",
+  "main": "chatbot.js",
+  "scripts": {
+    "start": "node chatbot.js",
+    "dev": "nodemon chatbot.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.22.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

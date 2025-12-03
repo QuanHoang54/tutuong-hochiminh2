@@ -1,0 +1,33 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7d774;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Open Book -->
+  <path d="M30 45 L30 85 Q30 90 35 90 L57 90 Q60 90 60 87 L60 48 Q60 45 57 45 Z"
+        fill="#1e40af" stroke="#1e3a8a" stroke-width="1.5"/>
+  <path d="M90 45 L90 85 Q90 90 85 90 L63 90 Q60 90 60 87 L60 48 Q60 45 63 45 Z"
+        fill="#1e40af" stroke="#1e3a8a" stroke-width="1.5"/>
+
+  <!-- Book Pages -->
+  <line x1="40" y1="55" x2="52" y2="55" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="40" y1="62" x2="52" y2="62" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="40" y1="69" x2="52" y2="69" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="68" y1="55" x2="80" y2="55" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="68" y1="62" x2="80" y2="62" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="68" y1="69" x2="80" y2="69" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Star -->
+  <polygon points="60,15 65,28 79,30 69,40 72,54 60,47 48,54 51,40 41,30 55,28"
+           fill="url(#starGrad)" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <!-- Light Rays -->
+  <line x1="60" y1="20" x2="60" y2="8" stroke="#f7d774" stroke-width="2" opacity="0.8"/>
+  <line x1="72" y1="24" x2="82" y2="16" stroke="#f7d774" stroke-width="1.5" opacity="0.7"/>
+  <line x1="48" y1="24" x2="38" y2="16" stroke="#f7d774" stroke-width="1.5" opacity="0.7"/>
+  <line x1="78" y1="32" x2="90" y2="28" stroke="#f7d774" stroke-width="1.5" opacity="0.6"/>
+  <line x1="42" y1="32" x2="30" y2="28" stroke="#f7d774" stroke-width="1.5" opacity="0.6"/>
+</svg>
