@@ -136,8 +136,8 @@ export default function Slide({ slide }) {
                   <ul className="space-y-3">
                     {slide.content.manifestations.map((item, index) => (
                       <li key={index} className="flex items-start gap-3 text-gray-800">
-                        <span className="text-red-600 font-bold text-xl">→</span>
-                        <span className="text-lg">{item}</span>
+                        <span className="text-red-600 font-bold text-xl">{item.icon || '→'}</span>
+                        <span className="text-lg">{item.text || item}</span>
                       </li>
                     ))}
                   </ul>
@@ -146,11 +146,21 @@ export default function Slide({ slide }) {
 
               {slide.content.examples && (
                 <div className="bg-yellow-50 border-2 border-yellow-300 p-6 rounded-xl mb-6">
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {slide.content.examples.map((example, index) => (
-                      <li key={index} className="flex items-start gap-3 text-gray-800">
-                        <span className="text-yellow-600 font-bold">▸</span>
-                        <span className="text-lg">{example}</span>
+                      <li key={index} className="text-gray-800">
+                        {typeof example === 'string' ? (
+                          <span className="text-lg">{example}</span>
+                        ) : (
+                          <div className="mb-2">
+                            {example.type && (
+                              <p className="font-bold text-lg text-yellow-700 mb-1">▸ {example.type}</p>
+                            )}
+                            {example.description && (
+                              <p className="text-lg pl-4">{example.description}</p>
+                            )}
+                          </div>
+                        )}
                       </li>
                     ))}
                   </ul>
