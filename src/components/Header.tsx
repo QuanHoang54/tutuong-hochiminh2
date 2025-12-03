@@ -16,7 +16,7 @@ export default function Header({ currentPage, onNavigate }) {
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => onNavigate('home')}>
             <img src={logo} alt="Logo" className="h-12 w-12" />
             <div>
-              <h1 className="text-lg font-bold text-blue-900">Mặt trận Văn hóa</h1>
+              <h1 className="text-lg font-bold text-red-800">Mặt trận Văn hóa</h1>
               <p className="text-xs text-gray-600">Tư tưởng Hồ Chí Minh</p>
             </div>
           </div>
@@ -30,7 +30,7 @@ export default function Header({ currentPage, onNavigate }) {
                   onClick={() => onNavigate(item.id)}
                   className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                     currentPage === item.id
-                      ? 'bg-blue-900 text-white'
+                      ? 'bg-red-700 text-white'
                       : 'text-gray-700 hover:bg-gray-100'
                   }`}
                 >

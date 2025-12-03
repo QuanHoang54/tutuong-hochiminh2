@@ -6,7 +6,7 @@ export default function LandingPage({ onNavigate }) {
       <section
         className="relative h-screen flex items-center justify-center overflow-hidden"
         style={{
-          background: 'linear-gradient(135deg, #1e3a8a 0%, #1e40af 40%, #0ea5e9 100%)'
+          background: 'linear-gradient(135deg, #991b1b 0%, #b91c1c 40%, #dc2626 100%)'
         }}
       >
         <div className="absolute inset-0 opacity-20">
@@ -27,17 +27,17 @@ export default function LandingPage({ onNavigate }) {
             <span className="text-yellow-300">"Mặt Trận Văn Hóa"</span>
           </h1>
 
-          <p className="text-2xl md:text-3xl mb-4 text-blue-100 font-light">
+          <p className="text-2xl md:text-3xl mb-4 text-red-100 font-light">
             Cuộc Chiến Chống "Giặc Nội Xâm"
           </p>
 
-          <p className="text-lg md:text-xl mb-12 text-blue-200 italic">
+          <p className="text-lg md:text-xl mb-12 text-red-200 italic">
             Theo Tư Tưởng Hồ Chí Minh
           </p>
 
           <button
             onClick={() => onNavigate('slides')}
-            className="group bg-yellow-400 text-blue-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-2xl inline-flex items-center gap-3"
+            className="group bg-yellow-400 text-red-900 px-8 py-4 rounded-full text-lg font-bold hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-2xl inline-flex items-center gap-3"
           >
             Bắt đầu trình chiếu
             <ArrowRight className="group-hover:translate-x-1 transition-transform" />
@@ -53,7 +53,7 @@ export default function LandingPage({ onNavigate }) {
 
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-center text-blue-900 mb-16">
+          <h2 className="text-4xl font-bold text-center text-red-800 mb-16">
             Nội dung chính
           </h2>
 
@@ -76,8 +76,8 @@ export default function LandingPage({ onNavigate }) {
             </div>
 
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                <Shield className="w-8 h-8 text-blue-600" />
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                <Shield className="w-8 h-8 text-red-600" />
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Phò chính trừ tà</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -86,7 +86,7 @@ export default function LandingPage({ onNavigate }) {
               </p>
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <div className="flex items-center gap-2 text-sm text-gray-500">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                  <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                   <span>Đạo đức làm nền</span>
                 </div>
               </div>
@@ -112,7 +112,7 @@ export default function LandingPage({ onNavigate }) {
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
+      <section className="py-20 bg-gradient-to-br from-red-900 via-red-800 to-red-900 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
             <img
@@ -127,7 +127,7 @@ export default function LandingPage({ onNavigate }) {
             Anh chị em là chiến sĩ trên mặt trận ấy."
           </blockquote>
 
-          <p className="text-xl text-blue-200">
+          <p className="text-xl text-red-200">
             Chủ tịch Hồ Chí Minh
           </p>
         </div>
@@ -135,7 +135,7 @@ export default function LandingPage({ onNavigate }) {
 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-blue-900 mb-8">
+          <h2 className="text-4xl font-bold text-red-800 mb-8">
             Sẵn Sàng Bắt Đầu?
           </h2>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
@@ -146,14 +146,14 @@ export default function LandingPage({ onNavigate }) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => onNavigate('slides')}
-              className="bg-blue-900 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-800 transition-all transform hover:scale-105 shadow-lg"
+              className="bg-red-700 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-red-600 transition-all transform hover:scale-105 shadow-lg"
             >
               Xem Trình Chiếu
             </button>
 
             <button
               onClick={() => onNavigate('quiz')}
-              className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-xl text-lg font-bold hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-lg"
+              className="bg-yellow-400 text-red-900 px-8 py-4 rounded-xl text-lg font-bold hover:bg-yellow-300 transition-all transform hover:scale-105 shadow-lg"
             >
               Làm Bài Kiểm Tra
             </button>

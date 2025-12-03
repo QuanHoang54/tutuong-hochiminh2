@@ -129,7 +129,7 @@ export default function SlideViewer() {
                   onClick={() => goToSlide(index)}
                   className={`w-2 h-2 rounded-full transition-all ${
                     index === currentSlide
-                      ? 'bg-blue-900 w-8'
+                      ? 'bg-red-700 w-8'
                       : 'bg-gray-300 hover:bg-gray-400'
                   }`}
                   title={`Slide ${index + 1}`}

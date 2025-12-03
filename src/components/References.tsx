@@ -47,7 +47,7 @@ export default function References() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-50 pt-24 pb-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-red-800 mb-4">
             Tài liệu tham khảo
           </h1>
           <p className="text-xl text-gray-600">
@@ -59,8 +59,8 @@ export default function References() {
           <div className="lg:col-span-2">
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                  <BookOpen className="text-blue-900" size={24} />
+                <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                  <BookOpen className="text-red-800" size={24} />
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900">Tài liệu chính</h2>
               </div>
@@ -69,16 +69,16 @@ export default function References() {
                 {references.map((ref, index) => (
                   <div
                     key={index}
-                    className="border-l-4 border-blue-600 bg-blue-50 p-6 rounded-r-xl hover:shadow-md transition-shadow"
+                    className="border-l-4 border-red-600 bg-red-50 p-6 rounded-r-xl hover:shadow-md transition-shadow"
                   >
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0">
                         {ref.type === 'book' ? (
-                          <BookOpen className="text-blue-700" size={20} />
+                          <BookOpen className="text-red-700" size={20} />
                         ) : ref.type === 'research' ? (
-                          <FileText className="text-blue-700" size={20} />
+                          <FileText className="text-red-700" size={20} />
                         ) : (
-                          <FileText className="text-blue-700" size={20} />
+                          <FileText className="text-red-700" size={20} />
                         )}
                       </div>
                       <div className="flex-1">
@@ -104,8 +104,8 @@ export default function References() {
                   Hồ Chí Minh và vai trò của sinh viên trong cuộc chiến chống "giặc nội xâm" thời đại mới.
                 </p>
 
-                <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-600">
-                  <p className="font-semibold text-blue-900 mb-3">Những điểm chính:</p>
+                <div className="bg-red-50 p-6 rounded-xl border-l-4 border-red-600">
+                  <p className="font-semibold text-red-800 mb-3">Những điểm chính:</p>
                   <ul className="space-y-2 text-gray-700">
                     <li>• Văn hóa là nền tảng tinh thần của dân tộc</li>
                     <li>• Giặc nội xâm là thách thức hiện thực với mỗi sinh viên</li>
@@ -115,7 +115,7 @@ export default function References() {
                   </ul>
                 </div>
 
-                <p className="font-semibold text-lg text-blue-900">
+                <p className="font-semibold text-lg text-red-800">
                   Chiến thắng bản thân chính là chiến thắng vĩ đại nhất!
                 </p>
               </div>

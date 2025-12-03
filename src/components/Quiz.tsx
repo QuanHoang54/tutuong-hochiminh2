@@ -61,7 +61,7 @@ export default function Quiz() {
   const getScoreMessage = () => {
     const percentage = (score / quizQuestions.length) * 100;
     if (percentage >= 90) return { text: 'Xuất sắc!', color: 'text-green-600' };
-    if (percentage >= 70) return { text: 'Tốt!', color: 'text-blue-600' };
+    if (percentage >= 70) return { text: 'Tốt!', color: 'text-red-600' };
     if (percentage >= 50) return { text: 'Khá!', color: 'text-yellow-600' };
     return { text: 'Cần cố gắng thêm!', color: 'text-red-600' };
   };
@@ -76,7 +76,7 @@ export default function Quiz() {
               <Trophy className="w-24 h-24 text-yellow-400 mx-auto" />
             </div>
 
-            <h2 className="text-4xl font-bold text-blue-900 mb-4">
+            <h2 className="text-4xl font-bold text-red-800 mb-4">
               Hoàn thành bài kiểm tra!
             </h2>
 
@@ -116,7 +116,7 @@ export default function Quiz() {
 
             <button
               onClick={handleRestart}
-              className="bg-blue-900 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-blue-800 transition-all transform hover:scale-105 inline-flex items-center gap-2 shadow-lg"
+              className="bg-red-700 text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-red-600 transition-all transform hover:scale-105 inline-flex items-center gap-2 shadow-lg"
             >
               <RotateCcw size={20} />
               Làm lại
@@ -141,7 +141,7 @@ export default function Quiz() {
                 <h2 className="text-2xl font-bold">Bài kiểm tra</h2>
               </div>
               <div className="text-right">
-                <p className="text-sm text-blue-200">Câu hỏi</p>
+                <p className="text-sm text-red-200">Câu hỏi</p>
                 <p className="text-xl font-bold">
                   {currentQuestion + 1}/{quizQuestions.length}
                 </p>
@@ -179,8 +179,8 @@ export default function Quiz() {
                         : showWrongAnswer
                         ? 'border-red-500 bg-red-50'
                         : isSelected
-                        ? 'border-blue-600 bg-blue-50'
-                        : 'border-gray-200 hover:border-blue-300 hover:bg-blue-50'
+                        ? 'border-red-600 bg-red-50'
+                        : 'border-gray-200 hover:border-red-300 hover:bg-red-50'
                     } ${showResult ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                   >
                     <div className="flex items-center gap-4">
@@ -191,7 +191,7 @@ export default function Quiz() {
                             : showWrongAnswer
                             ? 'border-red-500 bg-red-500 text-white'
                             : isSelected
-                            ? 'border-blue-600 bg-blue-600 text-white'
+                            ? 'border-red-600 bg-red-600 text-white'
                             : 'border-gray-300 text-gray-600'
                         }`}
                       >
@@ -220,7 +220,7 @@ export default function Quiz() {
               <button
                 onClick={handleSubmitAnswer}
                 disabled={selectedAnswer === null}
-                className="w-full bg-blue-900 text-white py-4 rounded-xl text-lg font-bold hover:bg-blue-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
+                className="w-full bg-red-700 text-white py-4 rounded-xl text-lg font-bold hover:bg-red-600 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg"
               >
                 Xác nhận
               </button>
@@ -256,7 +256,7 @@ export default function Quiz() {
         <div className="mt-6 text-center">
           <div className="inline-block bg-white rounded-full px-6 py-3 shadow-lg">
             <p className="text-gray-700">
-              Điểm hiện tại: <span className="font-bold text-blue-900 text-xl">{score}</span>
+              Điểm hiện tại: <span className="font-bold text-red-800 text-xl">{score}</span>
             </p>
           </div>
         </div>

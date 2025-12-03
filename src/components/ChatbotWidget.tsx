@@ -138,7 +138,7 @@ export default function ChatbotWidget() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110 z-50"
+          className="fixed bottom-6 right-6 w-14 h-14 bg-red-600 hover:bg-red-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all hover:scale-110 z-50"
           aria-label="Mở chatbot"
         >
           <MessageCircle className="w-6 h-6" />
@@ -149,14 +149,14 @@ export default function ChatbotWidget() {
       {isOpen && (
         <div className="fixed bottom-6 right-6 w-96 h-[600px] bg-white rounded-2xl shadow-2xl flex flex-col z-50 border border-slate-200">
           {/* Header */}
-          <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4 rounded-t-2xl flex items-center justify-between">
+          <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-4 rounded-t-2xl flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                 <MessageCircle className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold">SCF Chatbot</h3>
-                <p className="text-xs text-blue-100">Online • Sẵn sàng hỗ trợ</p>
+                <h3 className="font-semibold">Chiến Sĩ Văn Hóa</h3>
+                <p className="text-xs text-red-100">Online • Sẵn sàng hỗ trợ</p>
               </div>
             </div>
             <button
@@ -178,7 +178,7 @@ export default function ChatbotWidget() {
                 <div
                   className={`max-w-[80%] rounded-2xl px-4 py-2 shadow-sm ${
                     message.sender === 'user'
-                      ? 'bg-blue-600 text-white rounded-br-sm'
+                      ? 'bg-red-600 text-white rounded-br-sm'
                       : message.isError
                       ? 'bg-red-100 text-red-800 rounded-bl-sm'
                       : 'bg-white text-slate-800 rounded-bl-sm border border-slate-200'
@@ -186,7 +186,7 @@ export default function ChatbotWidget() {
                 >
                   <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.text}</p>
                   <div className={`text-xs mt-1 ${
-                    message.sender === 'user' ? 'text-blue-100' : 'text-slate-400'
+                    message.sender === 'user' ? 'text-red-100' : 'text-slate-400'
                   }`}>
                     {message.timestamp.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })}
                   </div>
@@ -237,12 +237,12 @@ export default function ChatbotWidget() {
                 onChange={(e) => setInputMessage(e.target.value)}
                 placeholder="Nhập tin nhắn..."
                 disabled={isLoading}
-                className="flex-1 px-3 py-2 bg-slate-50 text-slate-800 placeholder-slate-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50 text-sm"
+                className="flex-1 px-3 py-2 bg-slate-50 text-slate-800 placeholder-slate-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 disabled:opacity-50 text-sm"
               />
               <button
                 type="submit"
                 disabled={!inputMessage.trim() || isLoading}
-                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Send className="w-4 h-4" />
               </button>
